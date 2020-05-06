@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = function(Team) {
-team.disableRemoteMethod("delete", true);
+Team.disableRemoteMethod("delete", true);
 
 };
