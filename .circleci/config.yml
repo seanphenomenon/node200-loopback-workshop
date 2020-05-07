@@ -33,7 +33,7 @@ jobs:
             environment:
               NODE_ENV: production
               ENV: production
-              MONGO_URL: process.env.MONGODB_URI
+              MONGO_URL: mongodb://localhost:27017
 
 
 deploy:
