@@ -5,6 +5,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:12.16.3
 
+
     working_directory: ~/node-200-loopback-workshop
 
     steps:
