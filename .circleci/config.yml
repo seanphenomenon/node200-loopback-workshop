@@ -4,6 +4,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:12.16.3
+      - image: circleci/mongo:4.0.18
 
 
     working_directory: ~/node-200-loopback-workshop
@@ -32,6 +33,8 @@ jobs:
             environment:
               NODE_ENV: production
               ENV: production
+              MONGO_URL: mongodb://localhost:27017
+
 
 deploy:
   docker:
